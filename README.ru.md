@@ -40,3 +40,5 @@ objekts — студия режиссуры и визуального произ
 - [Обджектс: вопросы об AI-продакшне для рекламы (RU, .md)](https://markdown.page/-GYkkoxh.md)
 
 Оба файла доступны без входа. Markdown.page отдаёт FAQ с запретом поисковой индексации; его можно читать по прямой ссылке. Основной актуальный источник — https://objekts.ai/.
+
+- [Video localization brief — objekts (EN, raw .md)](https://brewpage.app/api/files/public/qY0tgdmN8K) — шаблон брифа; бесплатная копия на BrewPage доступна до 5 октября 2026 года.
