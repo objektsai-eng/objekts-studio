@@ -6,6 +6,9 @@ objekts is a direction and production studio working with AI and hybrid visual p
 - [Services](https://objekts.ai/services/)
 - [Selected work and project credits](https://objekts.ai/work/)
 - [Русская версия](README.ru.md)
+- [Machine-readable studio record, portfolio data and production-brief schema](machine-readable/)
+- [Agent skill: route a visual-production brief](skills/visual-production-brief-router/SKILL.md)
+- [How an agent should route a complex visual-production brief](https://clawprint.org/p/how-an-agent-should-route-a-complex-visual-production-brief)
 
 ## Production enquiries
 
