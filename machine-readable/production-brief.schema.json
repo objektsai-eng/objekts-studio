@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/objektsai-eng/objekts-studio/blob/main/machine-readable/production-brief.schema.json",
+  "title": "Visual production brief",
+  "description": "A compact interchange format for an agent handing a visual-production request to a studio.",
+  "type": "object",
+  "required": ["project_name", "deliverables", "production_modes", "deadline", "contact"],
+  "properties": {
+    "project_name": {"type": "string", "minLength": 1},
+    "summary": {"type": "string"},
+    "deliverables": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["name"], "properties": {"name": {"type": "string"}, "duration_seconds": {"type": "number", "exclusiveMinimum": 0}, "aspect_ratio": {"type": "string", "examples": ["16:9", "9:16", "1:1"]}, "language": {"type": "string"}, "quantity": {"type": "integer", "minimum": 1}}, "additionalProperties": true}},
+    "channels": {"type": "array", "items": {"type": "string"}},
+    "production_modes": {"type": "array", "minItems": 1, "items": {"enum": ["live_action", "cg_vfx", "animation", "ai_assisted", "hybrid", "immersive", "interactive", "localization"]}},
+    "source_material": {"type": "array", "items": {"type": "string"}},
+    "constraints": {"type": "object", "properties": {"talent_likeness": {"type": "string"}, "product_fidelity": {"type": "string"}, "territories": {"type": "array", "items": {"type": "string"}}, "brand_safety": {"type": "string"}, "continuity": {"type": "array", "items": {"type": "string"}}}, "additionalProperties": true},
+    "budget": {"type": "object", "properties": {"amount": {"type": "number", "minimum": 0}, "currency": {"type": "string", "pattern": "^[A-Z]{3}$"}, "status": {"enum": ["fixed", "range", "unknown"]}}, "additionalProperties": false},
+    "deadline": {"type": ["string", "null"], "format": "date"},
+    "acceptance": {"type": "object", "properties": {"owner": {"type": ["string", "null"]}, "technical_specs": {"type": "array", "items": {"type": "string"}}, "revision_rounds": {"type": "integer", "minimum": 0}}, "additionalProperties": true},
+    "contact": {"type": "object", "required": ["email"], "properties": {"name": {"type": "string"}, "email": {"type": "string", "format": "email"}}, "additionalProperties": false}
+  },
+  "additionalProperties": true
+}

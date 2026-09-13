@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://objekts.ai/#organization",
+  "name": "objekts",
+  "url": "https://objekts.ai/",
+  "email": "salute@objekts.ai",
+  "description": "Direction and visual production studio working across advertising and brands, film and series, animation, AI motion and design, immersive and interactive environments, and adaptive or localized content.",
+  "knowsAbout": ["advertising production", "film and series production", "animation", "AI motion design", "visual effects", "immersive environments", "interactive production", "video localization", "adaptive content"],
+  "areaServed": "Worldwide",
+  "sameAs": ["https://github.com/objektsai-eng", "https://www.sortlist.com/agency/objekts", "https://www.pickanagency.com/agencies/objekts"],
+  "subjectOf": {"@type": "CollectionPage", "url": "https://objekts.ai/work/", "name": "objekts portfolio"}
+}
